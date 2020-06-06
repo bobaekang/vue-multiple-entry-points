@@ -2,20 +2,22 @@ import Vue from "vue";
 
 Vue.config.productionTip = false;
 
+const DEFAULT_TARGET = {
+  name: "app",
+  path: "./App.vue"
+};
+
 const BUILD_TARGETS = [
-  {
-    name: "app",
-    path: "./App.vue"
-  },
+  DEFAULT_TARGET,
   {
     name: "test",
     path: "./Test.vue"
   }
 ];
 
-const { path } = BUILD_TARGETS.find(
-  ({ name }) => process.env.VUE_APP_BUILD_TARGET === name
-);
+const { path } = process.env.VUE_APP_BUILD_TARGET
+  ? BUILD_TARGETS.find(({ name }) => process.env.VUE_APP_BUILD_TARGET === name)
+  : DEFAULT_TARGET;
 
 import(`${path}`).then(({ default: App }) =>
   new Vue({
