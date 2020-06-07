@@ -8,7 +8,7 @@ This setup allows you to build multiple Vue applications sharing components from
 
 The key advantage of using multiple entry points is that this setup makes it trivial to share components between multiple Vue applications. No need for creating a separate component library package or setting up a sophisticated monorepo soultion.
 
-One minor improvement over the original CRA solution is to include a default build target (i.e. `/src/App.vue`), so that the build process can succeed without explicitly specifying the target in `.env`.
+One minor improvement over the original CRA solution is to simplify the logic for matching build target name with its path by replacing an array of objects to a single object; another minor improvement is to include a default build target (i.e. `/src/App.vue`), so that the build process can succeed without explicitly specifying the target in `.env`.
 
 ## Project setup
 
