@@ -1,3 +1,5 @@
+👋 Check out [`bobaekang/vue3-multiple-entry-points`](https://github.com/bobaekang/vue3-multiple-entry-points) repository for Vue 3 + Vite setup!
+
 # Multiple entry points setup for Vue 2
 
 > This repository is _heavily_ inspired by [this blog post on LogRocket](https://blog.logrocket.com/multiple-entry-points-in-create-react-app-without-ejecting/), which introduces the multiple entry points solution for Create React App application. Please read the blog post for a detailed explanation for this setup as well as the original motivation.
