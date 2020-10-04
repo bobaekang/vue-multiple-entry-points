@@ -1,10 +1,10 @@
-# Multiple entry points setup for Vue.js
+# Multiple entry points setup for Vue 2
 
 > This repository is _heavily_ inspired by [this blog post on LogRocket](https://blog.logrocket.com/multiple-entry-points-in-create-react-app-without-ejecting/), which introduces the multiple entry points solution for Create React App application. Please read the blog post for a detailed explanation for this setup as well as the original motivation.
 
-Showcasing a simple multiple entry points setup for Vue.js application. ✌️
+Showcasing a simple multiple entry points setup for Vue 2 application. ✌️
 
-This setup allows you to build multiple Vue applications sharing components from a single repository. Switching build targets is controlled by the `VUE_APP_BUILD_TARGET` environment variable. Check out `/src/main.js` to see how this is done!
+This setup allows you to build multiple Vue 2 applications sharing components from a single repository. Switching build targets is controlled by the `VUE_APP_BUILD_TARGET` environment variable. Check out `/src/main.js` to see how this is done!
 
 The key advantage of using multiple entry points is that this setup makes it trivial to share components between multiple Vue applications. No need for creating a separate component library package or setting up a sophisticated monorepo soultion.
 
